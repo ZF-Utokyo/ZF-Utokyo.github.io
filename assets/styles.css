@@ -238,6 +238,7 @@ h3 {
 
 .interest-grid p,
 .work-main p,
+.section-note,
 .contact p,
 .updates span {
   color: var(--muted);
