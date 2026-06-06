@@ -153,13 +153,9 @@ p {
 h1 {
   max-width: 720px;
   margin-bottom: 18px;
-  font-size: clamp(42px, 8vw, 74px);
-  line-height: 0.98;
+  font-size: clamp(38px, 5.1vw, 54px);
+  line-height: 1.06;
   letter-spacing: 0;
-}
-
-h1 span {
-  display: block;
 }
 
 h2 {
@@ -637,7 +633,7 @@ h3 {
 
 @media (max-width: 430px) {
   h1 {
-    font-size: 40px;
+    font-size: 27px;
   }
 
   .nav {
@@ -651,6 +647,10 @@ h3 {
 }
 
 @media (max-width: 500px) {
+  h1 {
+    font-size: 27px;
+  }
+
   .page,
   .footer {
     width: calc(100% - 32px);
