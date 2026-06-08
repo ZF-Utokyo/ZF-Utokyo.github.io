@@ -111,11 +111,18 @@ a:focus-visible {
 
 .portrait-wrap {
   position: relative;
+  display: flex;
+  width: 180px;
+  flex-direction: column;
+  align-items: center;
 }
 
 .portrait-wrap::before {
   position: absolute;
-  inset: 12px -12px -12px 12px;
+  top: 12px;
+  left: 12px;
+  width: 180px;
+  height: 180px;
   border: 1px solid var(--line);
   border-radius: 8px;
   content: "";
@@ -131,6 +138,16 @@ a:focus-visible {
   background: var(--paper-strong);
   box-shadow: var(--shadow);
   object-fit: cover;
+}
+
+.portrait-caption {
+  margin: 14px 0 0;
+  color: var(--accent-ink);
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-size: 13px;
+  font-weight: 800;
+  letter-spacing: 0;
+  text-align: center;
 }
 
 .eyebrow {
@@ -589,6 +606,11 @@ h3 {
   }
 
   .portrait {
+    height: 144px;
+  }
+
+  .portrait-wrap::before {
+    width: 144px;
     height: 144px;
   }
 
