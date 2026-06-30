@@ -261,6 +261,8 @@ h3 {
 .timeline span,
 .news-list span,
 .pub-meta,
+.pub-authors,
+.pub-venue,
 .repo-card p,
 .contact p {
   color: var(--muted);
@@ -277,10 +279,6 @@ h3 {
 }
 
 .section-heading {
-  display: flex;
-  align-items: baseline;
-  justify-content: space-between;
-  gap: 20px;
   margin-bottom: 18px;
 }
 
@@ -351,6 +349,41 @@ h3 {
   line-height: 1.1;
 }
 
+.pub-thumb-image {
+  display: block;
+  padding: 0;
+  background: #eef6ff;
+}
+
+.pub-thumb-image::before,
+.pub-thumb-image::after {
+  display: none;
+}
+
+.pub-thumb-image img {
+  display: block;
+  width: 100%;
+  height: 126px;
+  object-fit: cover;
+}
+
+.pub-badge {
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  z-index: 1;
+  border-radius: 2px;
+  padding: 4px 9px;
+  background: var(--blue);
+  color: #fff;
+  font-size: 11px;
+  font-weight: 800;
+  line-height: 1;
+  text-decoration: none;
+  text-transform: uppercase;
+  box-shadow: 0 2px 6px rgba(4, 51, 97, 0.24);
+}
+
 .thumb-fin {
   background:
     linear-gradient(135deg, rgba(31, 111, 174, 0.18), rgba(255, 184, 28, 0.22)),
@@ -388,6 +421,13 @@ h3 {
 .pub-title a:hover,
 .pub-title a:focus-visible {
   color: var(--link);
+}
+
+.pub-authors,
+.pub-venue {
+  margin-bottom: 5px;
+  font-size: 14px;
+  line-height: 1.45;
 }
 
 .pub-meta {
