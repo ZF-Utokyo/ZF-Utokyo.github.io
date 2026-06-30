@@ -225,7 +225,6 @@ h3 {
 }
 
 .news-list,
-.timeline,
 .interest-list {
   padding: 0;
   list-style: none;
@@ -247,24 +246,8 @@ h3 {
   font-weight: 720;
 }
 
-.timeline {
-  display: grid;
-  gap: 10px;
-}
-
-.timeline li {
-  display: grid;
-  grid-template-columns: 118px minmax(0, 1fr);
-  gap: 14px;
-}
-
-.timeline span,
 .news-list span,
-.pub-meta,
-.pub-authors,
-.pub-venue,
-.repo-card p,
-.contact p {
+.pub-authors {
   color: var(--muted);
 }
 
@@ -425,65 +408,16 @@ h3 {
   color: var(--link);
 }
 
-.pub-authors,
-.pub-venue {
+.pub-authors {
   margin-bottom: 5px;
   font-size: 14px;
   line-height: 1.45;
-}
-
-.pub-meta {
-  margin-bottom: 10px;
-  font-size: 15px;
-  line-height: 1.5;
 }
 
 .pub-links {
   display: flex;
   flex-wrap: wrap;
   gap: 8px;
-}
-
-.repo-list {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 14px;
-}
-
-.repo-card {
-  min-width: 0;
-  border: 1px solid var(--line);
-  border-radius: 6px;
-  padding: 14px;
-  background: #fff;
-}
-
-.repo-card h3 {
-  margin: 0 0 6px;
-  font-size: 16px;
-}
-
-.repo-card h3 a {
-  color: var(--blue);
-}
-
-.repo-card p {
-  margin-bottom: 12px;
-  font-size: 14px;
-  line-height: 1.5;
-}
-
-.repo-card span {
-  color: var(--blue);
-  font-size: 12px;
-  font-weight: 750;
-  text-transform: uppercase;
-}
-
-.email-text {
-  color: var(--ink);
-  font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
-  font-weight: 650;
 }
 
 .footer {
@@ -517,13 +451,11 @@ h3 {
   strong,
   .pub-title,
   .pub-title a,
-  .callout,
-  .email-text {
+  .callout {
     color: #f5f7fa;
   }
 
-  .avatar-link,
-  .repo-card {
+  .avatar-link {
     background: #171a21;
   }
 
@@ -589,14 +521,11 @@ h3 {
   }
 
   .news-list li,
-  .timeline li,
-  .publication-item,
-  .repo-list {
+  .publication-item {
     grid-template-columns: 1fr;
   }
 
-  .news-list li,
-  .timeline li {
+  .news-list li {
     gap: 2px;
   }
 
